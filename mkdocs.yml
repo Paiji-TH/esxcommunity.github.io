@@ -3,7 +3,7 @@ site_description: Unofficial ESX Documentation
 site_author: ESX Community
 
 # Repository
-repo_name: ESX Community Docs
+repo_name: ESX Community
 repo_url: https://github.com/esxcommunity/esxcommunity.github.io
 edit_uri: 'tree/docs/docs/'
 
