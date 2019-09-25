@@ -157,7 +157,7 @@
 
   
 
-<a href="https://github.com/esxcommunity/esxcommunity.github.io/" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/esx-community/esx-community-docs/" title="Go to repository" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -242,7 +242,7 @@
 
   
 
-<a href="https://github.com/esxcommunity/esxcommunity.github.io/" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/esx-community/esx-community-docs/" title="Go to repository" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -944,9 +944,65 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        ESX.Game.SetVehicleProperties
+      </label>
+    
     <a href="./" title="ESX.Game.SetVehicleProperties" class="md-nav__link md-nav__link--active">
       ESX.Game.SetVehicleProperties
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-arguments" class="md-nav__link">
+    Required arguments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -2320,6 +2376,49 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-arguments" class="md-nav__link">
+    Required arguments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    Properties
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2330,15 +2429,96 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/esxcommunity/esxcommunity.github.io/tree/docs/docs/es_extended/client/functions/game/setvehicleproperties.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/esx-community/esx-community-docs/tree/docs/docs/es_extended/client/functions/game/setvehicleproperties.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                 <h1 id="esxgamesetvehicleproperties">ESX.Game.SetVehicleProperties<a class="headerlink" href="#esxgamesetvehicleproperties" title="Permanent link">&para;</a></h1>
+<p>This function sets the properties for a vehicle.</p>
+<h4 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h4>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">ESX</span><span class="p">.</span><span class="n">Game</span><span class="p">.</span><span class="n">SetVehicleProperties</span><span class="p">(</span><span class="n">vehicle</span><span class="p">,</span> <span class="n">props</span><span class="p">)</span>
 </pre></div>
 </td></tr></table>
 
-<p>This function sets the properties for a vehicle.</p>
+<h5 id="required-arguments">Required arguments<a class="headerlink" href="#required-arguments" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>vehicle</strong>: The vehicle.</li>
+<li><strong>props</strong>: A table of vehicle <a href="#properties">properties</a>.</li>
+</ul>
+<h4 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h4>
+<div class="superfences-tabs">
+<input name="__tabs_1" type="radio" id="__tab_1_0" checked="checked" />
+<label for="__tab_1_0">lua</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">ESX</span><span class="p">.</span><span class="n">Game</span><span class="p">.</span><span class="n">SetVehicleProperties</span><span class="p">(</span><span class="n">vehicle</span><span class="p">,</span> <span class="p">{</span> <span class="n">plate</span> <span class="o">=</span> <span class="s1">&#39;ABC 123&#39;</span><span class="p">})</span>
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_1" type="radio" id="__tab_1_1" />
+<label for="__tab_1_1">javascript</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nx">ESX</span><span class="p">.</span><span class="nx">Game</span><span class="p">.</span><span class="nx">SetVehicleProperties</span><span class="p">(</span><span class="nx">vehicle</span><span class="p">,</span> <span class="p">{</span> <span class="nx">plate</span> <span class="o">:</span> <span class="s1">&#39;ABC 123&#39;</span><span class="p">})</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<h4 id="properties">Properties<a class="headerlink" href="#properties" title="Permanent link">&para;</a></h4>
+<p><strong>plate</strong> <br/>
+<strong>plateIndex</strong> <br/>
+<strong>bodyHealth</strong> <br/>
+<strong>engingeHealth</strong> <br/>
+<strong>fuelLevel</strong> <br/>
+<strong>dirtLevel</strong> <br/>
+<strong>color1</strong> <br/>
+<strong>color2</strong> <br/>
+<strong>pearlscentColor</strong> <br/>
+<strong>wheelColor</strong> <br/>
+<strong>wheels</strong> <br/>
+<strong>windotTint</strong> <br/>
+<strong>neonEnabled</strong> <br/>
+<strong>neonColor</strong> <br/>
+<strong>extras</strong> <br/>
+<strong>modSmokeEnabled</strong> <br/>
+<strong>tyreSmokeColor</strong> <br/>
+<strong>modSpoilers</strong> <br/>
+<strong>modFronBumper</strong> <br/>
+<strong>modRearBumper</strong> <br/>
+<strong>modSideSkirt</strong> <br/>
+<strong>modExhaust</strong> <br/>
+<strong>modFrame</strong> <br/>
+<strong>modGrille</strong> <br/>
+<strong>modHood</strong> <br/>
+<strong>modFender</strong> <br/>
+<strong>modRightFender</strong> <br/>
+<strong>modRoof</strong> <br/>
+<strong>modEngine</strong> <br/>
+<strong>modBrakes</strong> <br/>
+<strong>modTransmission</strong> <br/>
+<strong>modHorns</strong> <br/>
+<strong>modSuspension</strong> <br/>
+<strong>modArmor</strong> <br/>
+<strong>modTurbo</strong> <br/>
+<strong>modXenon</strong> <br/>
+<strong>modFrontWheels</strong> <br/>
+<strong>modBackWheels</strong> <br/>
+<strong>modPlateHolder</strong> <br/>
+<strong>modVanityPlate</strong> <br/>
+<strong>modTrimA</strong> <br/>
+<strong>modOrnaments</strong> <br/>
+<strong>modDashboard</strong> <br/>
+<strong>modDial</strong> <br/>
+<strong>modDoorSpeaker</strong> <br/>
+<strong>modSeats</strong> <br/>
+<strong>modSteeringWheel</strong> <br/>
+<strong>modShifterLeavers</strong> <br/>
+<strong>modAPlate</strong> <br/>
+<strong>modSpeakers</strong> <br/>
+<strong>modTrunk</strong> <br/>
+<strong>modHydrolic</strong> <br/>
+<strong>modEngineBlock</strong> <br/>
+<strong>modAirFilter</strong> <br/>
+<strong>modSruts</strong> <br/>
+<strong>modArchCover</strong> <br/>
+<strong>modAerials</strong> <br/>
+<strong>modTrimB</strong> <br/>
+<strong>modTank</strong> <br/>
+<strong>modWindows</strong> <br/>
+<strong>modLivery</strong></p>
                 
                   
                 
