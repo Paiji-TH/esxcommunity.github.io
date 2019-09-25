@@ -17,16 +17,14 @@ ESX.TriggerServerCallback('name', function( callback ) end, data)
 
 #### Examples
 
-##### Lua
-```lua
+```lua tab="lua"
 ESX.TriggerServerCallback('name', function( callback )
     -- Do something with the callback..
     print(callback)
 end, 'data')
 ```
 
-##### JavaScript
-```javascript
+```javascript tab="javascript"
 ESX.TriggerServerCallback('name', function( callback ) {
     // Do something with the callback..
     console.log(callback);
