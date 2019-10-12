@@ -233,7 +233,11 @@ nav:
           - xPlayer.setName: 'es_extended/server/xplayer/functions/setname.md'
           - xPlayer.setPermissions: 'es_extended/server/xplayer/functions/setpermissions.md'
           - xPlayer.setSessionVar: 'es_extended/server/xplayer/functions/setsessionvar.md'
-
+  - ESX menus:
+    - Installation: 'esx_menus/index.md'
+    - esx_menu_default: 'esx_menus/esx_menu_default.md'
+    - esx_menu_dialog: 'esx_menus/esx_menu_dialog.md'
+    - esx_menu_list: 'esx_menus/esx_menu_list.md'
 # Plugins
 plugins:
   - search
