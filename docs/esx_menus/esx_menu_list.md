@@ -1,4 +1,4 @@
-# esx_menu_default
+# esx_menu_list
 
 #### Arguments
 - **head**: Title of the menu
