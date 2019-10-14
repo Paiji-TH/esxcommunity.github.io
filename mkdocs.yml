@@ -89,6 +89,8 @@ nav:
     - Home: 'index.md'
     - FAQ: 
       - Start order: 'faq/startorder.md'
+    - ES Extended: 'es_extended/index.md'
+    - ESX menus: 'esx_menus/index.md'
   - ES Extended:
     - Installation: 'es_extended/index.md'
     - Common:
